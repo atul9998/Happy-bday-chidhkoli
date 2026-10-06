@@ -18,17 +18,51 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <body class="is-loaded">
+  <!-- Background -->
+  <img src="bg.png" class="background-image" alt="Background">
 
-    html {
-      height: 100%;
-      overflow: hidden;
-    }
+  <!-- Decorative corners -->
+  <img src="flower.jpg" class="corner-image top-left" alt="Corner Decoration">
+  <img src="hop.png" class="corner-image-right" alt="Corner Decoration Right">
 
+  <!-- Hearts -->
+  <img src="heartAnimation.gif" class="heart1" alt="Heart Animation 1">
+  <img src="heartAnimation.gif" class="heart2" alt="Heart Animation 2">
+
+  <!-- Headline -->
+  <h1 class="headline">Happy Birthday My Chidhkoli ✨</h1>
+
+  <!-- Gift Box -->
+  <div class="boxgift">
+    <img src="giftbox.png" class="box-gift base" alt="Gift Base">
+    <img src="giftbox.png" class="box-gift lid" alt="Gift Lid">
+  </div>
+
+  <!-- 3D Cake -->
+  <div class="cake-wrapper-3d">
+    <img src="cake_3d.png" class="cake-3d-img" alt="Birthday Cake">
+    <div class="flame-overlay-3d"></div>
+    <div class="smoke-3d"></div>
+    <div class="tap-hint-3d">Tap to blow candle 🎂</div>
+  </div>
+
+  <!-- Music -->
+  <audio autoplay loop>
+    <source src="happybirthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Letter Scene (hidden until triggered) -->
+  <div id="letterScene">
+    <div class="container">
+      <div class="envelope"></div>
+      <div class="card">
+        <p class="text">Happy Birthday ❤️</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
     body {
       height: 100vh;
       width: 100vw;
